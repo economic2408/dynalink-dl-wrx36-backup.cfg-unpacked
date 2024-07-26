@@ -1,0 +1,2 @@
+*/1 * * * * /lib/tmpfs_monitor.sh
+0 */12 * * * /etc/init.d/sysntpd restart

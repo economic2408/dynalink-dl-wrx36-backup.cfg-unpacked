@@ -1,0 +1,19 @@
+
+config switch 'port_trigger'
+	option enabled '0'
+
+config switch 'port_fwd'
+	option element_count '0'
+
+config dmz 'wan_dmz'
+	option enabled '0'
+
+config dmz 'ipv6_dmz'
+	option enabled '0'
+
+config mapping 'multiple_nat'
+	option enabled '0'
+
+config switch 'nat_loopback'
+	option enabled '1'
+

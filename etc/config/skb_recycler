@@ -1,0 +1,5 @@
+
+config skb
+	option max_skbs '1024'
+	option max_spare_skbs '256'
+

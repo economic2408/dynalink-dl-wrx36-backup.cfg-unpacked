@@ -1,0 +1,28 @@
+
+config global
+	option interface 'eth0'
+	option program 'ez-ipupdate'
+	option daemon 'ez-ipupdate'
+	option enabled '0'
+	option service 'dyndns'
+
+config noip2
+	option username ''
+	option password ''
+	option hostname ''
+
+config dyndns
+	option username ''
+	option hostname ''
+	option password ''
+
+config qdns
+	option username ''
+	option password ''
+	option hostname ''
+	option wildcard '0'
+
+config dtdns
+	option username ''
+	option password ''
+	option hostname ''

@@ -1,0 +1,13 @@
+config fota global
+	option enable_auto '0'
+	option url ''
+	option checktime '0'
+	option nexttime '86400'
+	option dlfile '/tmp/image'
+	option server_nosupport '0'
+	option random '1'
+
+config fota app
+	option first '1'
+	option download_time '60'
+	option check_time '60'

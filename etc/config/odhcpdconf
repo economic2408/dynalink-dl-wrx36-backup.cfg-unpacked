@@ -1,0 +1,11 @@
+config dhcp 'lan'
+        option interface 'lan'
+        option dhcpv6 'server'
+        option ra 'server'
+        option ra_maxinterval '30'
+        option ra_mininterval '20'
+	option dhcpv6_pd    '0'
+        list ra_flags 'managed-config'
+        list ra_flags 'other-config'
+
+config tr_config 'tr'

@@ -1,0 +1,6 @@
+HISTORY=7
+COMPRESSAFTER=10
+SADC_OPTIONS=""
+SA_DIR="/var/log/sysstat"
+ZIP="xz"
+ENABLED="true"

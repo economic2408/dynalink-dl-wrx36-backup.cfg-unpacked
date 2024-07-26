@@ -1,0 +1,40 @@
+config 'global'
+	option 'enable' '0'
+	option 'ServerName' 'ProFTPD On OpenWRT'
+	option 'ServerType' 'standalone'
+	option 'DefaultServer' 'on'
+	option 'RequireValidShell' 'no'
+	option 'Port' '21'
+	option 'UseIPv6' 'off'
+	option 'Umask' '022'
+	option 'MaxInstances' '20'
+	option 'AllowOverwrite' 'on'
+	option 'AllowStoreRestart' 'on'
+	option 'ServerIdent' 'off'
+	option 'PassivePorts'   '49152 65534'
+	option 'User' 'ftp'
+	option 'Group' 'ftp'
+	option 'DefaultRoot' '/mnt/'
+	option 'share_folder_num' '30'
+	option 'outaccenable' '0'
+	option 'outaccport' '8021'
+	option 'advanced_config'    '0'
+	option 'AllowAnonLogin' '1'
+	option 'DefaultTransferMode' 'binary'
+	option 'UseEncoding' 'on'
+
+#francis_lo@20190618[PGRTWD-10] Add UseEncoding to force FTP data encoding is UTF-8
+
+#config 'share'
+#	option 'path' '/mnt/SSD/Movies/'
+########anon_auth 0:none anonymous auth  1:read only 2:read write
+#	option 'anon_auth' '0'
+#	list 'ro_list' 'user1'
+#	list 'rw_list' 'user2'
+#	ist 'rw_list' 'user3'
+
+#config 'share'
+#	option 'path' '/mnt/USB/Documents'
+#	option 'anon_auth' '2'
+
+        

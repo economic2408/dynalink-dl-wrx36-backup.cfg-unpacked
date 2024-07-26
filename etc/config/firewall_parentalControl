@@ -1,0 +1,25 @@
+
+config number 'number'
+	option MACAddressListNumberOfEntries '0'
+	option TimeSlotListNumberOfEntries '0'
+	option RuleNumberOfEntries '0'
+#eg.
+#config rule 
+#	option Enable '1'
+#	option Alias 'string'
+#	option Status 'enable'
+#	option Timeslots 'Timeslots_B'
+#	option WanAccess 'REJECT'
+#	option MACAddresses 'MAC_B'
+#
+#config TimeslotsList 
+#	option Alias 'Timeslots_B'
+#	option Always '0'
+#	option WeekDays '0001110'
+#	option StartTime '00:00'
+#	option EndTime '23:59'
+#
+#config MACAddressList 
+#	option Alias 'MAC_B'
+#	option MACAddresses 'E0:DB:55:CD:74:6B'
+

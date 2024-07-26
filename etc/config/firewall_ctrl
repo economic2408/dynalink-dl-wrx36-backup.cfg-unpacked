@@ -1,0 +1,14 @@
+config switch 'parent_ctrl'
+	option enabled '0'
+
+config url_filter 'ufilter'
+	option enabled '0'
+
+config key_filter 'kfilter'
+	option enabled '0'
+
+config netserv_filter 'nsfilter'
+	option enabled '0'
+
+config switch 'cliACL'
+	option enabled '0'

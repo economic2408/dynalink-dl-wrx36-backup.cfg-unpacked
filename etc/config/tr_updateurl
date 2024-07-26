@@ -1,0 +1,29 @@
+
+config tr_record 'ACS_Record'
+	option section_name 'ACS_Record'
+
+config tr_record 'WEB_Record'
+	option section_name 'WEB_Record'
+
+config tr_record 'DHCPv4_option43_askey_Record'
+	option section_name 'DHCPv4_option43_askey_Record'
+
+config tr_record 'DHCPv4_option43_ASKEY1_Record'
+	option section_name 'DHCPv4_option43_ASKEY1_Record'
+
+config tr_record 'DHCPv4_option125_askey_Record'
+	option section_name 'DHCPv4_option125_askey_Record'
+
+config tr_record 'DHCPv4_option125_ASKEY1_Record'
+	option section_name 'DHCPv4_option125_ASKEY1_Record'
+
+config tr_record 'DHCPv6_option17_askey_Record'
+	option section_name 'DHCPv6_option17_askey_Record'
+
+config tr_record 'DHCPv6_option17_ASKEY1_Record'
+	option section_name 'DHCPv6_option17_ASKEY1_Record'
+
+config tr_updateurl 'tr_updateurl'
+	option current_section_name 'tr_updateurl'
+	option isboot 'yes'
+

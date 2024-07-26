@@ -1,0 +1,48 @@
+config tr_client
+	option client_status 'Enabled'
+	option enable_wan '1'
+	option alias 'cpe-xxxx'
+	option client_interface 'eth0'
+	option client_duid ''
+	option enable_iana '1'
+	option enable_iapd '1'
+	option enable_rapid '0'
+	option enable_renew '1'
+	option suggestt1 '-1'	
+	option suggestt2 '-1'
+	option sentoptionnum '1'
+	option servernum '0'
+	option reciveoptionnum '0'
+	list supportedoption '15'
+	list supportedoption '17'
+	list supportedoption '21'
+	list supportedoption '22'
+	list supportedoption '23'
+	list supportedoption '24'
+	list supportedoption '31'
+	list supportedoption '32'
+	list supportedoption '56'
+	list supportedoption '64'
+	list supportedoption '67'
+	list supportedoption '82'
+	list supportedoption '83'
+	list supportedoption '94'
+	list supportedoption '95'
+	list supportedoption '96'
+	list requestedoption ''
+
+config dhcpv6server
+	option sourceaddress ''
+	option duid ''
+	option refreshtime '0001-01-01T00:00:00Z'
+
+config sentoption	
+	option optiontag '15'	
+	option enable_option '1'	
+	option alias 'cpe-xxx'	
+	option value '636861727465725f6d6170'
+
+config reciveoption 
+	list recive_option ''
+	option server ''
+

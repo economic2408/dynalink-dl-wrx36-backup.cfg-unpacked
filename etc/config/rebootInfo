@@ -1,0 +1,4 @@
+config describe
+	option name 'save reboot reason-time'
+	option last_reboot_time '0'
+	option reboot_count '0'

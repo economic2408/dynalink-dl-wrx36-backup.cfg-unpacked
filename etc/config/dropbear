@@ -1,0 +1,17 @@
+
+config dropbear
+	option PasswordAuth 'on'
+	option RootPasswordAuth 'on'
+	option Port '22'
+	option Interface 'wan'
+	option IdleTimeout '0'
+	option enable '1'
+
+config dropbear
+	option PasswordAuth 'on'
+	option RootPasswordAuth 'on'
+	option Port '22'
+	option Interface 'lan'
+	option IdleTimeout '0'
+	option enable '1'
+

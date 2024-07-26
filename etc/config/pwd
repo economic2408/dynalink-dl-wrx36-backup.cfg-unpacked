@@ -1,0 +1,19 @@
+
+config account_max_num 'account_max_num'
+	option admin_max_num '5'
+	option common_max_num '10'
+
+config userinfo 'subscriber'
+	option name 'admin'
+	option hide_passwd '$2a$11$W8/KspexdthEsSV3kVygMOnsMHxkQJ0mxQpV2ztCbVN9RJKkkGoGW'
+	option remote_web '1'
+	option local_web '1'
+	option hidden_page '1'
+	option gtype '0'
+	option editable '0'
+	option usertype '0'
+	option remote_ssh '1'
+	option local_ssh '1'
+	option normal_passwd '$2a$11$W8/KspexdthEsSV3kVygMOwSb6X3POcddFSlX9l8k3Zq3mYy3zLJG'
+	option ssh_passwd '$2a$11$W8/KspexdthEsSV3kVygMOwSb6X3POcddFSlX9l8k3Zq3mYy3zLJG'
+

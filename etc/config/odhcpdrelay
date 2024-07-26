@@ -1,0 +1,12 @@
+config dhcp 'wan6'
+	option interface 'wan6'
+	option dhcpv6 'relay'
+	option ra 'relay'
+	option ndp 'relay'
+	option master '1'
+
+config dhcp 'lan'
+	option interface 'lan'
+	option dhcpv6 'relay'
+	option ra 'relay'
+	option ndp 'relay'

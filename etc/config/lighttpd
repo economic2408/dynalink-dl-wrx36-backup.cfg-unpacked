@@ -1,0 +1,31 @@
+config global
+	option enable '1'
+	option http_port '80'
+	option https_port '443'
+	option webdav_http_port '6200'
+	option webdav_https_port '6300' 
+	option out_acc_enable '0'   
+	option user_out_http_port '8080'
+	option user_out_https_port '8443'
+	option share_folder_num '30'
+	option advanced_config  '0'
+	option webdav_enable '0'
+	option misc_http_x '0'       
+	option misc_http_mode '1'
+	option misc_httpport_x '8081' 
+	option misc_httpsport_x '443'
+
+#config share
+#	option          'path'          '/mnt/FAT32/123'
+#	option          'anon_auth'     '1'
+#	option          'readonly'      '0'
+#	option 		'share_name' 	'123'
+
+#config share
+#	option          'path'          '/mnt/FAT32/samba'
+#	option          'anon_auth'     '0'
+#	option          'readonly'      '1'
+#	option 			'share_name'	'samba'
+#	list            'user'          'admin'
+#	list            'user'          'nickli'
+

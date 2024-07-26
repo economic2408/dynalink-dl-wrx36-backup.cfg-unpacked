@@ -1,0 +1,29 @@
+config detect
+	option reboot_reason 'Unknown'
+
+config detect_cpu
+        option enable '0'
+        option threshold '95'
+	option timer '300'
+	option cnt_limit '5'
+
+config detect_mem		
+	option enable '0'
+	option threshold '95'
+	option timer '300'
+	option cnt_limit '5'
+
+config detect_watchdog
+	option enable '0'
+	option dst_ip4 '8.8.8.8'
+	option dst_ip6 '2001:4860:4860::8888'
+	option pkt_size '128'
+	option ttl '50'
+        option frequency '30'
+        option miss '0'
+	option threshold '1000'
+
+config curchan
+        option 2_4G '1'
+        option 5G '44'
+		

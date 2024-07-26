@@ -1,0 +1,4 @@
+
+config printer
+	option enable '0'
+

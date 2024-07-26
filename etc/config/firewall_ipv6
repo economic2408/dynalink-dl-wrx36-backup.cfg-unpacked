@@ -1,0 +1,7 @@
+
+config switch 'ipv6_allow'
+	option enabled '0'
+
+config switch 'ipv6_base'
+	option mld_enable '0'
+

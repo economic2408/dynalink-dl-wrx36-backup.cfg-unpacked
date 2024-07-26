@@ -1,0 +1,6 @@
+
+config pimd config
+	option enable 0
+
+config pimd config6
+	option enable 0

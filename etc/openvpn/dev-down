@@ -1,0 +1,8 @@
+#!/bin/sh
+
+wan_gw_exist=`ip ro | grep default | grep $wandev`
+if [ "$wan_gw_exist" = "" ]; then
+	echo "vpn-down: default router under wan interface not exist" > /dev/console
+	/etc/openvpn/recover_wan_gw.sh
+fi
+

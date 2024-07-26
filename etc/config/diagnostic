@@ -1,0 +1,5 @@
+
+config diagnostic 'iperf3'
+	option enable '0'
+	option port '5201'
+

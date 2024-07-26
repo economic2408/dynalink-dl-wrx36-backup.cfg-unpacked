@@ -1,0 +1,6 @@
+config mymail
+     option enable '0'
+config onoff
+     option login '1'
+     option channel '0'
+     option wan_ip '0'

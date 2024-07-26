@@ -1,0 +1,26 @@
+#!/bin/sh
+# Copyright (c) 2013 The Linux Foundation. All rights reserved.
+
+tunnel_if="$1"
+
+# Add by HarryChen 2020/03/24(PURDA-691)
+vpn_defaultroute=`uci get network.${tunnel_if##*[-]}.defaultroute` | grep 0
+vpn_disabled=`uci get network.${tunnel_if##*[-]}.disabled` | grep 1
+dns=`ifstatus wan | jsonfilter -e '@["route"][0].target'`
+# Add by HarryChen 2020/03/24(PURDA-691) End
+
+[ -e "/tmp/server.$tunnel_if" ] && {
+	for svr in $(cat /tmp/server.$tunnel_if); do
+		ip route del blackhole $svr metric 1000
+		ip route del $svr metric 0
+	done
+	# delete server write file, if exist
+	rm -f /tmp/server.$tunnel_if
+	# Add by HarryChen 2020/03/24(PURDA-691)
+	# Restore setting
+	route del default dev eth0
+	if [ -n $vpn_disabled ] || [ -n $vpn_defaultroute ]; then
+		route add -net 0.0.0.0 netmask 0.0.0.0 gw $dns dev eth0
+	fi
+	# Add by HarryChen 2020/03/24(PURDA-691) End
+}

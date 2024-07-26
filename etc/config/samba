@@ -1,0 +1,10 @@
+
+config global
+	option enable '0'
+	option workgroup 'Workgroup'
+	option share_folder_num '30'
+	option advanced_config '0'
+	option netbios 'DL-WRX36'
+
+config print
+

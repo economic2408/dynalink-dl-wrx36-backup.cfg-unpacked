@@ -1,0 +1,14 @@
+
+config device 'device'
+	option router_name 'DL-WRX36'
+	option onboard_status '0'
+	option binding_status '0'
+
+config attach 'attach'
+	option deviceId '73898107-09aa-4625-906a-29c9f95e05f2'
+
+config led 'led'
+	option on '1'
+	option procedure 'no'
+	option status 'blue_on'
+

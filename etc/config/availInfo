@@ -1,0 +1,13 @@
+config describe
+	option name 'ping statics'
+ 
+config ping_statics
+	option total_ping       '0'
+	option fail_ping        'NA'
+	option last_fail_ping_time 'NA'
+	option max_executive_fail_ping 'NA'
+	option max_executive_fail_ping_seq 'NA'
+	option average_response_time '0'
+	option min_response_time '1000'
+	option max_response_time '1'
+

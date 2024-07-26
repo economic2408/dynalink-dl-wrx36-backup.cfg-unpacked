@@ -1,0 +1,36 @@
+#!/bin/sh
+
+dev=$1
+use_defaultroute=`uci -q get network.vpn_client.defaultroute`
+# RTD-632
+wan_prot="`uci -q get network.wan.proto`"
+[ "$wan_prot" == "pppoe" ] && {
+	wandev="pe-wan"
+} || {
+	wandev=`uci -q get network.wan.ifname`
+}
+dev_exist=`ifconfig $dev 2>/dev/null`
+gw_exist=`ip ro | grep default`
+wan_gw_exist=`ip ro | grep default | grep $wandev`
+
+# RTD-632 add: -a "$wan_prot" != "pppoe"
+if [ "$use_defaultroute" = "1" -a "$wan_prot" != "pppoe" ]; then
+	# handle tun type only, tap is handled by dhcp
+	if [ "$dev" != "tap0" ]; then
+		if [ "$dev_exist" != "" ]; then
+			if [ "$gw_exist" != "" ]; then
+				echo "vpn-up: remove original gw: $gw_exist" > /dev/console
+				ip ro del default
+			fi
+			echo "vpn-up: add default route to $dev" > /dev/console
+			ip ro add default dev $dev
+		else
+			echo "vpn-up: $dev not exist, do nothing!" > /dev/console
+		fi
+	fi
+else
+	if [ "$wan_gw_exist" = "" ]; then
+		/etc/openvpn/recover_wan_gw.sh
+	fi 
+fi
+

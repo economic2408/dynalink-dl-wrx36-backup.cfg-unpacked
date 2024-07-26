@@ -1,0 +1,2 @@
+config number number
+        option FilterNumberOfEntries                        '0'
